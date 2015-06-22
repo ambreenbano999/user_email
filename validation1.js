@@ -42,7 +42,7 @@ res.send(html);
 
 var mysql = require('mysql');
 var HOST = 'localhost';
-var PORT = 8082;
+var PORT = 8083;
 var MYSQL_USER = 'root';
 var MYSQL_PASS = 'amber12345';
 var DATABASE = 'abcd';
@@ -54,7 +54,7 @@ var connection = mysql.createConnection({
   user     : 'root',
   password : 'amber12345',
   database : 'abcd',
-  PORT : 8082
+  PORT : 8083
 
   
 });
@@ -92,6 +92,6 @@ dialog.info('Please enter valid username and email id');
 
 /////////////////////////////////////////
 
-app.listen(8082);
+app.listen(8083);
 
 
