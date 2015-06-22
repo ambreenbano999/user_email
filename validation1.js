@@ -31,7 +31,7 @@ app.post('/', function(req, res){
   var html = 'Hello: ' + userName + ' and your email is '+ emailId +
               '.<br>' +
              '<a href="/">Try again.</a>';
-
+//validation checks
 if(validator.isEmail(emailId)&&(!validator.isNull(userName)))
 {
 console.log('hi');
@@ -55,8 +55,7 @@ var connection = mysql.createConnection({
   password : 'amber12345',
   database : 'abcd',
   PORT : 8083
-
-  
+ 
 });
 
 connection.connect();
